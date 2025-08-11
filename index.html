@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <script src="script.js"></script>
+    <title>Profil</title>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">Web</a>
+        
+
+        <nav class="navbar">
+            <div class="navDiv">
+                <a href="" class="navItem">Profile</a>    
+                <a href="" class="navItem">Contact</a>
+                <!--<a href="" class="navItem">Platform</a>-->
+            </div>
+            <div class="dropdown">
+                <button class="dropbtn">☰ Menu</button>
+                <div class="content">
+                    <a href="">Profile</a>
+                    <a href="">Contact</a>
+                    <!--<a href="">Platform</a>-->
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    
+    <div style="margin-top: 150px;"></div>
+    <div class="box">
+
+
+        <div class="card" id="expandCard">
+            <div class="detailHeader" id="CardHeader" role="button" aria-expanded="false" tabindex="0">
+                <p>Nama</p>
+                <span class="arrow" id="arrow">▲</span>
+            </div>
+
+            <div class="detailContent" class="detailContent">
+                <p>
+                    Aulian Bayu Septyo Adi (Ian)
+                </p>
+            </div>
+        </div>
+
+        <div class="card" id="expandCard">
+            <div class="detailHeader" id="CardHeader" role="button" aria-expanded="false" tabindex="0">
+                <p>Gambar</p>
+                <span class="arrow" id="arrow">▲</span>
+            </div>
+
+            <div class="detailContent" class="detailContent">
+                <img class="pict" src="lily.jpg" alt="lily" width="250px">
+            </div>
+        </div>
+
+        <div class="card" id="expandCard">
+            <div class="detailHeader" id="CardHeader" role="button" aria-expanded="false" tabindex="0">
+                <p>Paragraf</p>
+                <span class="arrow" id="arrow">▲</span>
+            </div>
+
+            <div class="detailContent" class="detailContent">
+                <p>
+                    Ini isinya yapping.
+                </p>
+            </div>
+        </div>
+
+        <div class="card" id="expandCard">
+            <div class="detailHeader" id="CardHeader" role="button" aria-expanded="false" tabindex="0">
+                <p>Link</p>
+                <span class="arrow" id="arrow">▲</span>
+            </div>
+
+            <div class="detailContent" class="detailContent">
+                <p>
+                    Re:Memories<br><a href="https://rememories.id">rememories.id</a>
+                </p>
+            </div>
+            <div class="detailContent" class="detailContent">
+                <p>
+                    Lahelu<br><a href="https://lahelu.com">lahelu.com</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="card" id="expandCard">
+            <div class="detailHeader" id="CardHeader" role="button" aria-expanded="false" tabindex="0">
+                <p>Hobi</p>
+                <span class="arrow" id="arrow">▲</span>
+            </div>
+
+            <div class="detailContent" class="detailContent">
+                <p>
+                    Ini isinya yapping.
+                </p>
+            </div>
+        </div>
+
+        <!--
+        <div class="detail">
+            Nama
+            <div class="hoverElement">Aulian Bayu Septyo Adi</div>
+        </div>
+        <div class="detail">
+            Gambar
+        </div>
+        <div class="detail">
+            Tautan
+        </div>
+        <div class="detail">
+            Daftar Hobi
+            <div class="hoverElement">
+                <ul>
+                    <li>Gaming</li>
+                    <li>Listening to music</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    -->
+    <script>
+        document.querySelectorAll('.card').forEach(card => {
+            const header = card.querySelector('.detailHeader');
+            const arrow = card.querySelector('.arrow');
+
+            header.addEventListener('click', () => {
+                const isOpen = card.classList.toggle('open');
+                header.setAttribute('aria-expanded', isOpen);
+                arrow.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+            });
+        });
+
+
+
+        /*
+        const card = document.getElementById('expandCard');
+        const header = document.getElementById('CardHeader');
+        const arrow = document.getElementById('arrow');
+
+        function toggle() {
+            const isOpen = card.classList.toggle('open');
+            header.setAttribute('aria-expanded', isOpen);
+            arrow.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+
+        header.addEventListener('click', toggle);
+        */
+    </script>
+</body>
+</html>
