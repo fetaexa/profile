@@ -150,11 +150,6 @@
   }
 }
 
-@font-face{
-    font-family: 'futura bk bt';
-    src: url('FUTURA BK BT BOOK.TTF')
-}
-
 body{
     min-height: 100vh;
     background-image: url(rememo.jpg);
@@ -221,6 +216,8 @@ body::-webkit-scrollbar{
   text-align: center;
 }
 
+
+
 .card .detailHeader{
   padding: 14px 16px;
   background: linear-gradient(145deg, #cacaca, #f0f0f0);
@@ -268,3 +265,17 @@ body::-webkit-scrollbar{
   font-size: 16px;
 }
 
+
+
+#border{
+  width: 3px;
+  height: 100%;
+  background-color: #2f00ff;
+  justify-self: center;
+}
+
+.detailBox{
+  display: flex;
+  flex-direction: row;
+  background-color: #000000;
+}
