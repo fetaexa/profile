@@ -278,4 +278,5 @@ body::-webkit-scrollbar{
   display: flex;
   flex-direction: row;
   background-color: #000000;
+  min-width: 60px;
 }
