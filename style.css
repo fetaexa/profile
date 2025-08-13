@@ -81,9 +81,9 @@
 /*==========DROPDOWN==========*/
 
 .dropdown{
-    width: 150px;
-    height: 50px;
-    display:inline-block;
+  width: 150px;
+  height: 50px;
+  display:inline-block;
   margin-right: 70px;
 }
 
@@ -267,16 +267,22 @@ body::-webkit-scrollbar{
 
 
 
-#border{
+/*#border{
   width: 3px;
   height: 100%;
   background-color: #2f00ff;
   justify-self: center;
-}
+}*/
 
 .detailBox{
-  display: flex;
-  flex-direction: row;
-  background-color: #000000;
-  min-width: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: #ffffff;
+  gap: 10px;
+}
+
+.linkBox{
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: white;
 }
