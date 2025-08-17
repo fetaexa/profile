@@ -6,6 +6,10 @@
     transition: .3s;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .header{
     position: fixed;
     top: 0;
@@ -127,6 +131,7 @@
   font-size: 16px;
   cursor: pointer;
   padding: 8px 12px;
+  margin-left: 30px;
 }
 
 /*==========Responsive==========*/
@@ -158,7 +163,7 @@ body{
     background-attachment: fixed;
     font-family: futura bk bt;
     font-weight: 900;
-    padding-top: 80px;
+    padding-top: 30px;
 }
 
 body::-webkit-scrollbar{
@@ -214,6 +219,7 @@ body::-webkit-scrollbar{
   background-color: white;
   margin-bottom: 20px;
   text-align: center;
+  max-width: 600px;
 }
 
 
@@ -285,4 +291,48 @@ body::-webkit-scrollbar{
   padding: 10px;
   box-sizing: border-box;
   background-color: white;
+}
+
+.topBorder{
+  width: 80%;
+  height: 50px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  text-align: center;
+  align-content: center;
+  background: linear-gradient(90deg, white, #aaa);
+  border-radius: 15px;
+  max-width: 750px;
+}
+
+.gridBox{
+  width: 100%;
+  margin: 15px 0;
+  max-width: 400px;
+  min-height: 140px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  aspect-ratio: 1;
+}
+
+.gridDetail{
+margin: 10px 10px;
+aspect-ratio: 1;
+width: 100% -10px;
+height: 100% -10px;
+max-width: 170px;
+background-color: whitesmoke;
+border-radius: 10px;
+}
+
+.icons{
+  width: 70px;
+  border-radius: 50px;
+}
+
+.icons2{
+  width: 75px;
+  margin-top: 20px;
+  border-radius: 50px;
 }
