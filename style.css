@@ -325,7 +325,6 @@ body::-webkit-scrollbar{
 .gridBox{
   width: 100%;
   margin: 15px 0;
-  max-width: 400px;
   min-height: 140px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -353,7 +352,7 @@ border-radius: 10px;
 }
 
 .icons2{
-  width: 75px;
+  width: 55%;
   margin-top: 20px;
   border-radius: 50px;
 }
